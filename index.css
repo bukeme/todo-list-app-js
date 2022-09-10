@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: url('bg.jpg') no-repeat bottom fixed;
+    background-size: cover;
+}
+
+.container {
+    width: 70%;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+i {
+    color: white;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+i[status='complete'] {
+    transition: all 0.3s ease-in-out;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 300;
+    margin-bottom: 80px;
+    color: white;
+}
+
+.clear {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 70px;
+}
+
+.content {
+    width: 50%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+}
+
+.list {
+    width: 90%;
+}
+
+li p {
+    margin: 0 auto 0 20px;
+    font-size: 20px;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+p.line-through {
+    text-decoration: line-through;
+    color: rgb(148, 146, 146);
+}
+
+.add-to-do {
+    width: 50%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-top: 1px solid white;
+    width: 70%;
+    margin-left: 5%;
+    height: 30px;
+    font-size: 20px;
+    color: white;
+    padding: 10px 5px;
+}
+
+.fa-check-circle {
+    color: green;
+}
